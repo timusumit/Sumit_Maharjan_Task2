@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+font-family: 'Roboto', sans-serif;
+}
+.text-yellow{
+    color:#ffe600;
+}
+.btn-main{
+    text-decoration: none;
+    border-radius:0;
+    padding:1rem 3rem;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+.btn-main:hover{
+    text-decoration: none;
+
+}
+.btn-yellow{
+    background:#ffe600;
+    border:1px solid #ffe600;
+    color:#4f4400; 
+}
+.btn-yellow:hover{
+    color:#fff;
+    background:none;
+    transition:0.2s ease;
+}
+.btn-yellow-outline{
+    border:1px solid #ffe600;
+    color:#fff;
+}
+.btn-yellow-outline:hover{
+    color:#4f4400; 
+    background:#ffe600;
+}
+.arrow-scroll-white {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+.arrow-scroll-black{
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+}
+/*Hero Section */
+.hero-section-wrap{
+    background-image: url('../images/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 9rem 0;
+}
+.hero-logo-img{
+    margin-bottom: 60px;
+}
+.hero-section-wrap p{
+    font-size: 15px;
+    color:#fff;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.hero-section-wrap h1{
+    color:#ffe600;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 4rem;
+}
+
+
+/* Nav Section */
+.nav-section-wrap{
+    background:#c7c7c7;
+    padding: 1.5rem 0;
+}
+.main-nav .nav-item {
+    margin:15px 10px;
+    padding:6px 18px;
+    border:1px solid #c7c7c7;
+}
+.main-nav .nav-item .nav-link{
+    text-transform: uppercase;
+    color:#727272;
+    font-size:15px;
+    padding:0;
+}
+.main-nav .nav-item:hover,.main-nav .nav-item.active{
+    border:1px solid #ffe600;
+    transition: .2s ease;
+}
+
+/*Talk to us Section */
+.talk-to-us{
+    padding:6rem 0;
+}
+.talk-title-section p{
+    margin-bottom: 7rem;
+}
+
+.talk-title-section p, .about-title-section p, .talk-to-us h3, .about-section h3, .talk-method-section h4, .contact-section h3, .contact-section p{
+    text-transform: uppercase;
+}
+
+.talk-to-us h3, .about-section h3, .contact-section h3{
+    color:#131316;
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+.talk-method-section {
+    margin-bottom: 2rem;
+}
+
+.talk-method-section h4 {
+    font-size: 15px;
+    margin-bottom: 3rem;
+}
+.talk-method-section h4 span{
+    font-size: 24px;
+    font-weight: 300;
+    margin-right: 20px; 
+    border-right: 1px solid #ffe600;
+    padding:10px;
+}
+.talk-method-section p{
+    max-width: 200px;
+    margin: 0 auto;
+    font-size: 15px;
+    color:#8e8e8e;
+}
+
+/*Quote Section */
+.quote-section{
+background:url('../images/quote_bg.jpg');
+background-position: center;
+background-size: cover;
+padding:10rem 0;
+}
+.quote-section h2{
+    font-size: 25px;
+    color:#131316;
+    font-weight:bold;
+    font-style: italic;
+}
+.quote-section p{
+    text-transform: uppercase;
+    color:#fff;
+}
+
+/*About Section */
+.about-section{
+    padding:7rem 0;
+}
+.about-title-section{
+    margin-bottom: 5rem;
+}
+.about-text-part p{
+    color:#131316;
+    font-size: 16px;
+}
+
+/*contact Section */
+.contact-section{
+background: #424242;
+padding:6rem 0;
+}
+.main-contact-form .form-control{
+    border-radius: 0;
+}
+.main-contact-form .form-control::placeholder{
+color:#424245;
+}
+.btn-submit{
+    width: 100%;
+    color:#ffe600;
+    text-transform: uppercase;
+    background: #131316;
+    border-radius: 0;
+}
+.btn-submit:hover{
+    color:#131316;
+    background:#ffe600;
+}
+
+/* Footer Section */
+.footer-section{
+    background: #131316;
+    padding: 1.5rem 0;
+}
+.footer-section h6{
+    color:#ffe600;
+    font-size: 13px;
+    margin: 5px auto;
+}
+.footer-content-wrap, .footer-content{
+    display:flex;
+} 
+
+ul.social-link{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.social-link li{
+    display: inline-block;
+}
+ul.social-link li a{
+    padding: 15px;
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+    display: inline-block;
+    margin: 5px;
+}
+ul.social-link li a:hover{
+    background:#666;
+    transition: 0.2s ease;
+
+}
+/*Responsive Media Queries */
+@media(max-width:991px){
+    .nav-section-wrap{
+        position: absolute;
+        top:0;
+        width:100%;
+        background: none;
+    }
+    .nav-section-wrap .main-nav .navbar-brand{
+        display: none;
+    }
+    .nav-section-wrap .main-nav {
+        justify-content: flex-end;
+    }
+    .nav-section-wrap .main-nav .navbar-collapse{
+        background:#c7c7c7;
+        margin-top: 10px;
+    }
+    .talk-method-section h4 span{
+        display:block;
+        border:none;
+        margin:0 0 10px 0;
+    }
+    .talk-method-section p{
+        max-width: 100%;
+    }
+    .arrow-scroll-white, .arrow-scroll-black{
+        display: none;
+    }
+    
+}
+
+@media(max-width:575px){
+    .about-section img.img-fluid{
+        width:100%;
+    }
+    .footer-content-wrap, .footer-content{
+        display:block;
+        
+    } 
+    .footer-content{
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .footer-content:first-child{
+        margin-bottom: 1.5rem;
+    }
+}
